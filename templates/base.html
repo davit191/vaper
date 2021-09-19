@@ -31,7 +31,9 @@
             </div>
             <div class="search_tel">
                 <div class="header_tel">
-                    <a href="tel:+37495544099">+37495544099</a>
+                {% if data_contact.first.name == "Phone" %}
+                    <a href="tel:{{ data_contact.first.phone }}">{{ data_contact.first.phone }}</a>
+                {% endif %}
                     <p>11:00-21:00 <br> ամեն օր</p>
                 </div>
                 <form action="#">
@@ -134,10 +136,9 @@
             <div class="footer_block">
                 <h4>Օգտակար հղումներ</h4>
                 <ul>
-                    <li><a href="#">Դիմում, բողոք և առաջարկներ</a></li>
-                    <li><a href="#">Գաղտնիության քաղաքականություն</a></li>
-                    <li><a href="#">Օգտագործման կանոնները</a></li>
-                    <li><a href="#">Ծնողներին և դեռահասներին</a></li>
+                    {% for p in useful %}
+                    <li><a href="#">{{ p.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="footer_block">
@@ -148,17 +149,14 @@
                     {% for m in menu %}
                     <li><a href="{% url 'getCategory' slug=m.slug %}">{{ m.title }}</a></li>
                      {% endfor %}
-                    <li><a href="#">Պարագաներ</a></li>
-                    <li><a href="#">Հեղուկներ</a></li>
-                    <li><a href="#">PG/VG</a></li>
                 </ul>
             </div>
             <div class="footer_block">
                 <h4>Գնորդներին</h4>
                 <ul>
-                    <li><a href="#">Առաքում և վճարում</a></li>
-                    <li><a href="#">Երաշխիք</a></li>
-                    <li><a href="#">Անձնական տվյալներ</a></li>
+                    {% for p in foruser %}
+                    <li><a href="#">{{ p.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="footer_block">
@@ -171,7 +169,7 @@
             </div>
         </section>
         <div class="create">
-            <p>&copy; 2020 Բոլոր իրավունքները պաշտպանված են </p>
+            <p>&copy; {% now 'Y' %} Բոլոր իրավունքները պաշտպանված են </p>
             <p>Project by <a href="https://www.hayrapetyanstyle.am">HayrapetyanStyle</a></p>
         </div>
     </footer>

@@ -66,6 +66,12 @@ class Data_contactAdmin(admin.ModelAdmin):
     save_as = True
 
 
+class PageAdmin(admin.ModelAdmin):
+    list_display =["title","state"]
+    list_display_links  = ["title","state"]
+    list_filter = ["state"]
+    save_on_top = True
+    save_as = True
 
 
 
@@ -77,5 +83,6 @@ admin.site.register(models.news, NewsAdmin)
 admin.site.register(models.slide,SlideAdmin)
 admin.site.register(models.personal, PersonalAdmin)
 admin.site.register(models.data_contact,Data_contactAdmin)
+admin.site.register(models.pages,PageAdmin)
 
 

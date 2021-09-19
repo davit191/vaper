@@ -90,5 +90,20 @@ class data_contact(models.Model):
         verbose_name = "հեռախոսահամար"
         verbose_name_plural = "կոնտակտաին տվյալներ"
     
-    
+Page_Choice = [
+    ("0", "Օգտակար հղումներ"),
+    ("1", "Գնորդներին"),
+]
 
+class pages(models.Model):
+    title = models.CharField("Վերնագիր", max_length=50)
+    state = models.CharField('Ում համար', max_length=2, choices=Page_Choice)
+    text = models.TextField("տեքստ")
+
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Էջ"
+        verbose_name_plural = "Էջեր"

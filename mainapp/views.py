@@ -23,8 +23,7 @@ def ollnews(request):
 
 def contakt(request):
     pers  = personal.objects.all()
-    phon = data_contact.objects.all()
-    return render( request,"mainapp/contacts.html" ,{'personal':pers, 'phon':phon})
+    return render( request,"mainapp/contacts.html" ,{'personal':pers})
 
 def slayder(request):
     slid = slide.objects.all() 

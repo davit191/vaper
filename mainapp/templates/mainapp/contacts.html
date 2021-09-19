@@ -19,7 +19,7 @@
                     </ul>
                     <ul>
                         <h4>Կոնտակտային տվյալներ</h4>
-                        {% for i in phon %}
+                        {% for i in data_contact %}
                         <li><a href="{% if i.name == "Mail" %}mailto{% else %}tel{% endif %}:{{ i.phone }}">{{ i.phone }}</a></li>
                         {% endfor %}
                     </ul>
