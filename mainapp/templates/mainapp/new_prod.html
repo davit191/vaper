@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% block main %}
+<section class="main container">
+            <section class="article_section">
+                <h1 class="title">{{ news.title }}</h1>
+                
+                <div class="article_text">
+                    <div class="article_cover">
+                        <img src="{{ news.image.url }}" alt="cover">
+                    </div>
+                    <p>{{ news.text }}</p>
+                </div>
+            </section>
+        </section>
+{% endblock main %}
+
+
+
+

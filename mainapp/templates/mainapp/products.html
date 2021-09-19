@@ -1,0 +1,502 @@
+{% extends "base.html"%}
+ {% block main %}
+
+        <div class="btn-up" style="display: block;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve" class="i">
+                <path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z" data-original="#000000" class="active-path" data-old_color="#000000"></path>
+        </svg>
+        </div>
+        <section class="main container">
+            <section class="productspage">
+                <h1 class="title">{{ cat.title }}</h1>
+
+                <section class="products">
+                    <div class="products_filter_mobile">
+                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 410.182 410.182" style="enable-background:new 0 0 410.182 410.182;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M392.995,0H17.187c-5.632,0-9.216,6.144-5.632,11.264l137.728,193.024c6.144,8.192,9.728,18.944,9.728,29.696v168.448
+                                    c0.512,5.632,5.12,9.216,9.728,7.168l78.336-29.696c2.56-0.512,4.096-3.584,4.096-6.144V233.984
+                                    c0-10.752,3.584-20.992,9.728-29.696L398.627,11.264C402.211,6.144,398.627,0,392.995,0z"></path>
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        </svg>
+
+                        Ֆիլտրել
+                    </div>
+                    <div class="products_filter">
+                        <div class="close_filter">
+                            <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M383.22,338.79
+                                        c11.7,11.7,11.7,30.73,0,42.44c-11.61,11.6-30.64,11.79-42.44,0L257,297.42l-85.79,83.82c-11.7,11.7-30.73,11.7-42.44,0
+                                        c-11.7-11.7-11.7-30.73,0-42.44l83.8-83.8l-83.8-83.8c-11.7-11.71-11.7-30.74,0-42.44c11.71-11.7,30.74-11.7,42.44,0L257,212.58
+                                        l83.78-83.82c11.68-11.68,30.71-11.72,42.44,0c11.7,11.7,11.7,30.73,0,42.44l-83.8,83.8L383.22,338.79z"></path>
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            </svg>
+
+                        </div>
+                        <form action="#">
+                            <div class="minmax_price">
+                                <p>Արժեքը</p>
+                                <input type="text" placeholder="Մին․">
+                                <input type="text" placeholder="Մաքս․">
+                            </div>
+                            <div class="all_products_filter">
+                                <p>Բրենդ</p>
+                                
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Augvape
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+    
+    
+                                <p id="additional">Միացման տիպը</p>
+                                <label class="custom"> 
+                                    Կնոպկա
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    Ավտոմատ
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+    
+                                <p id="additional">Լիցքավորման ծավալ</p>
+                                <label class="custom"> 
+                                    0.5
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    0.6
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    1
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    5
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+    
+                                <p id="additional">Ավտոմայզեր</p>
+                                <label class="custom"> 
+                                    5mm
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    10mm
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    15mm
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    20mm
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+    
+                                <p id="additional">Մարտկոցների քանակը</p>
+                                <label class="custom"> 
+                                    1
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    2
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    4
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="custom"> 
+                                    6
+                                    <input type="checkbox" class="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+    
+                                <button id="filterBtn"> Ցույց տալ (999)</button>
+                            </div>
+                            <div class="branched_filter">
+                                <li>
+                                    <a href="#">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+                                            <g>
+                                                <g>
+                                                    <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+                                                        L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+                                                        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path>
+                                                </g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+
+                                        Ինչ-որ ֆիլտրի անուն 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+                                            <g>
+                                                <g>
+                                                    <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+                                                        L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+                                                        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path>
+                                                </g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+
+                                        Ինչ-որ ֆիլտրի անուն 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+                                            <g>
+                                                <g>
+                                                    <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+                                                        L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+                                                        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></path>
+                                                </g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+
+                                        Ինչ-որ ֆիլտրի անուն 3
+                                    </a>
+                                </li>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="all_products">
+                        <div class="product hover">
+                            <a href="productmore.html" class="product_cover">
+                                <img src="https://папироска.рф/wa-data/public/shop/products/11/66/16611/images/157713/157713.hqd-cuvie-elektronnaya-sigareta-odnorazovaya.500x0.jpg" alt="item">
+                            </a>
+                            <h4>
+                                <a href="productmore.html">HQD Cuve Էլեկտրոնային սիգարետ (մեկանգամյա)</a>
+                            </h4>
+                            <p id="short">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, excepturi?</p>
+                            <p id="old_price">1500 AMD</p>
+                            <p id="price">1200 AMD</p>
+                            <a href="productmore.html" class="buy">Գնել</a>
+                        </div>
+                        <div class="product hover">
+                            <a href="productmore.html" class="product_cover">
+                                <img src="https://папироска.рф/wa-data/public/shop/products/11/66/16611/images/157713/157713.hqd-cuvie-elektronnaya-sigareta-odnorazovaya.500x0.jpg" alt="item">
+                            </a>
+                            <h4>
+                                <a href="productmore.html">HQD Cuve Էլեկտրոնային սիգարետ (մեկանգամյա)</a>
+                            </h4>
+                            <p id="short">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, excepturi?</p>
+                            <p id="old_price">1500 AMD</p>
+                            <p id="price">1200 AMD</p>
+                            <a href="productmore.html" class="buy">Գնել</a>
+                        </div>
+                        <div class="product hover">
+                            <a href="productmore.html" class="product_cover">
+                                <img src="https://папироска.рф/wa-data/public/shop/products/11/66/16611/images/157713/157713.hqd-cuvie-elektronnaya-sigareta-odnorazovaya.500x0.jpg" alt="item">
+                            </a>
+                            <h4>
+                                <a href="productmore.html">HQD Cuve Էլեկտրոնային սիգարետ (մեկանգամյա)</a>
+                            </h4>
+                            <p id="short">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, excepturi?</p>
+                            <p id="old_price">1500 AMD</p>
+                            <p id="price">1200 AMD</p>
+                            <a href="productmore.html" class="buy">Գնել</a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                    </div>
+                </section>
+                <section class="main_forseo">
+                    <h1 class="title">Ինչ-որ վերնագիր սեոյի համար</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia ea tenetur architecto cupiditate harum consequatur qui, aliquid id ratione obcaecati deserunt labore placeat sequi sit nemo mollitia, tempora eos sed. Quas maxime iste nemo sint dolorem, id adipisci debitis molestias obcaecati illo voluptatem magni pariatur reprehenderit reiciendis. Non quaerat sint est at aspernatur, delectus omnis architecto dolor dolores expedita nihil quis, blanditiis temporibus nesciunt voluptate voluptatem nobis ad velit repellendus, perferendis illum quae accusantium odio sequi. Voluptate tenetur exercitationem sapiente numquam consectetur, necessitatibus dignissimos, aliquam molestiae quisquam nam nulla perspiciatis tempore iusto vitae sint reiciendis, maxime dolor suscipit expedita! Eveniet fuga dolor saepe voluptatibus, et nemo repudiandae debitis atque ullam! Blanditiis totam laboriosam optio quia nisi inventore ad sed autem amet vero sequi tempora eius, dignissimos minus vel repellat officiis perferendis. Dolorem voluptates non perspiciatis id nihil sint, deserunt quasi quod quam iusto veritatis autem corporis vel eaque rerum deleniti? Corrupti voluptate perspiciatis blanditiis quibusdam modi. Est blanditiis id totam quam provident dolorem, pariatur excepturi voluptates illo, obcaecati nulla omnis dolor! Porro illo exercitationem corrupti dolorem dolorum laborum officiis tempora delectus consequatur, iusto, quas aperiam dicta sed ea accusamus cumque voluptatem nesciunt consequuntur obcaecati aut. Eius quaerat dicta odio veritatis harum doloremque reiciendis est nesciunt maiores perferendis. Placeat voluptatum, eos dolor quasi explicabo totam obcaecati officiis quos culpa optio mollitia sit sequi possimus expedita quae minus accusantium nostrum facere! Eaque accusamus quisquam maiores eum aliquam? Qui sint alias eum quaerat animi quas vel? Aspernatur nisi quasi minima illo architecto corrupti tempore recusandae repellat cum alias debitis odit, exercitationem quaerat aliquid maiores quam assumenda, quos quisquam! Repudiandae tempora, atque quidem expedita consequuntur dignissimos ab minima doloribus cumque eius obcaecati enim officia quo fugit dolore autem reprehenderit rerum soluta! Molestias nisi recusandae magnam ipsum possimus, quaerat adipisci doloremque tempora. Eos nisi labore rerum! Porro assumenda culpa earum, saepe labore dolorum illo quasi laudantium. Voluptate repellat tenetur id libero perspiciatis enim accusamus nihil beatae sed odit. Ducimus unde mollitia corporis neque dolorum! Officia consequatur doloribus praesentium ipsa explicabo excepturi rem ab, molestiae itaque suscipit eaque, soluta tempore ex magni eligendi vel est quasi perferendis fuga. Non distinctio quidem excepturi ex aperiam porro sapiente quo est similique nihil. Quod, eum incidunt doloremque maxime earum maiores consectetur, quidem, vero quaerat repellendus laudantium corrupti! Nostrum, nam aliquam. Corporis libero quisquam, temporibus tempore suscipit magnam corrupti porro, ab, nesciunt minima laudantium aut. Mollitia delectus nesciunt modi veritatis, optio, porro temporibus laudantium praesentium, dolore magni blanditiis. Perferendis fuga voluptatum dolor reiciendis distinctio aperiam sequi magnam placeat impedit eveniet, cum aliquid unde, asperiores ipsam minima nisi facilis rerum officia voluptatem culpa quidem. Nulla nesciunt omnis culpa eaque est voluptatem sit ab iusto, a vero mollitia minima consectetur dolore. Possimus minus suscipit error quae, alias dolorem aliquam repellendus hic veniam aut odit consequatur obcaecati minima quia, nemo libero vero recusandae officia unde dignissimos, laboriosam illo velit. Nihil aut sit nemo quo modi, consequatur recusandae voluptatem itaque commodi qui corrupti. Doloribus obcaecati vel voluptatibus commodi eligendi amet qui reprehenderit ducimus molestiae!</p>
+                </section>
+                
+            </section>
+        </section>
+
+    {% endblock main %}
