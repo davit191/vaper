@@ -23,14 +23,10 @@ def ollnews(request):
 
 def contakt(request):
     pers  = personal.objects.all()
-    return render( request,"mainapp/contacts.html" ,{'personal':pers})
+    phon = data_contact.objects.all()
+    return render( request,"mainapp/contacts.html" ,{'personal':pers, 'phon':phon})
 
 def slayder(request):
     slid = slide.objects.all() 
 
     return render(request,"base.html",{"slid":slid})
-    
-def phone(request):
-    phon = data_contact.objects.all()
-
-    return render(request,"mainapp/contacts.html",{'phon':phon})

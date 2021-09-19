@@ -19,9 +19,9 @@
                     </ul>
                     <ul>
                         <h4>Կոնտակտային տվյալներ</h4>
-                        <li><a href="tel:+37495544099">{{ phon.phone }}</a></li>
-                        <li><a href="#">{{ phon.mail }}</a></li>
-                        <li><a href="#">{{ phon.gmail }}</a></li>
+                        {% for i in phon %}
+                        <li><a href="{% if i.name == "Mail" %}mailto{% else %}tel{% endif %}:{{ i.phone }}">{{ i.phone }}</a></li>
+                        {% endfor %}
                     </ul>
                     <ul>
                         <h4>Գտնվելու վայր</h4>
