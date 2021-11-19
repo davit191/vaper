@@ -114,10 +114,10 @@
                 
                      {% for s in news %}
                     <div class="news_article">
-                        <a href="{% url 'newser' id=s.id %}">
+                        <a href="{% url 'newser' news_id=s.id %}">
                             <img src= {{ s.image.url }} alt="some title">
                         </a>
-                        <a href="{% url 'newser' id=s.id %}">{{ s.title }}</a>
+                        <a href="{% url 'newser' news_id=s.id %}">{{ s.title }}</a>
                     </div>
                     {% endfor %}
                     

@@ -13,11 +13,11 @@
                 <div class="allnews_grid">
                     {% for i in news %}
                         <div class="news_article__big hover">
-                            <a href="{% url 'newser' id=i.id %}">
+                            <a href="{% url 'newser' news_id=i.id %}">
                                 <img src="{{ i.image.url }}" alt="cover">
                             </a>
 
-                            <h4><a href="{% url 'newser' id=i.id %}">{{ i.title }}</a></h4>
+                            <h4><a href="{% url 'newser' news_id=i.id %}">{{ i.title }}</a></h4>
                             <p>{{ i.text|truncatewords:10 }}</p>
                         </div>
                     {% endfor %}
